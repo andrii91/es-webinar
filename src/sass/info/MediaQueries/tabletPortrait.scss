@@ -1,0 +1,23 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  @import '../mobile';
+
+  & {
+    .head-item {
+      text-align: left;
+    }
+    .h2-title {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .webinars-item {
+      height: 100%;
+      .webinars-footer {
+        .col-md-5 {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
